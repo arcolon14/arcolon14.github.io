@@ -24,9 +24,9 @@ short_bio: >-
   I am a postdoc in the Kern-Ralph co-lab in the Institute of Ecology and Evolution, University of Oregon. I am currently working on population genomics in barnacles and venturing into the world of population genomic simulations. I did my PhD in the Catchen lab, in the Department of Evolution, Ecology, and Behavior at the University of Illinois Urbana-Champaign.
   </p>
 
-portrait_url: /assets/images/photos/portrait.jpg
-portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+portrait_url: /assets/images/photos/profile.jpg
+# portrait_caption: >-
+#   Optional caption shown when hovering over the photo.
 
 education:
 - name: Massachusetts Institute of Technology
