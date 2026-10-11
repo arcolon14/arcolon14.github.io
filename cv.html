@@ -14,7 +14,9 @@ navbar_title: CV
                 <div class="h2 font-weight-normal mb-1">Angel G. Rivera-Colón, Ph.D.</div>
                 <div>Postdoctoral Researcher</div>
                 <div>Institute of Ecology and Evolution, University of Oregon</div>
-                <div><i class="fas fa-at"></i> <span class="email-text">arcolon14(at)gmail.com</span></div>
+                <a href="mailto:{{ site.data.profile.email | encode_email }}">
+                    <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
+                </a>
             </div>
             <div class="ml-auto mt-3 mt-md-0">
                 <a class="btn btn-primary" href="{{ cv_pdf }}" target="_blank"><i class="fas fa-file-pdf"></i> Download PDF</a>
@@ -26,56 +28,23 @@ navbar_title: CV
 <div class="card border-0 shadow-sm bg-white mb-3">
     <div class="card-body p-4">
         <h4 class="mb-3">Education</h4>
-        <div class="cv-entry">
-            <div class="cv-main"><strong>Ph.D. in Biology</strong><br>Department of Evolution, Ecology, and Behavior<br>University of Illinois Urbana-Champaign (UIUC)</div>
-            <div class="cv-date">December 2022</div>
-        </div>
-        <div class="cv-entry">
-            <div class="cv-main"><strong>M.S. in Biology</strong><br>Department of Biology<br>University of Puerto Rico, Rio Piedras (UPRRP)</div>
-            <div class="cv-date">July 2016</div>
-        </div>
-        <div class="cv-entry">
-            <div class="cv-main"><strong>B.S. in Biotechnology</strong><br>Department of Natural Sciences and Mathematics<br>Inter American University of Puerto Rico, Bayamón (UIA-Bayamón)</div>
-            <div class="cv-date">May 2013</div>
-        </div>
+        <div class="cv-entry"><span class="cv-date">December 2022</span><strong>Ph.D. in Biology</strong><br>Department of Evolution, Ecology, and Behavior<br>University of Illinois Urbana-Champaign (UIUC)</div>
+        <div class="cv-entry"><span class="cv-date">July 2016</span><strong>M.S. in Biology</strong><br>Department of Biology<br>University of Puerto Rico, Rio Piedras (UPRRP)</div>
+        <div class="cv-entry"><span class="cv-date">May 2013</span><strong>B.S. in Biotechnology</strong><br>Department of Natural Sciences and Mathematics<br>Inter American University of Puerto Rico, Bayamón (UIA-Bayamón)</div>
     </div>
 </div>
 
 <div class="card border-0 shadow-sm bg-white mb-3">
     <div class="card-body p-4">
         <h4 class="mb-3">Professional Experience</h4>
-        <div class="cv-entry">
-            <div class="cv-main"><strong>Postdoctoral Researcher</strong><br>Institute of Ecology and Evolution<br>University of Oregon (UO)<br>Eugene, OR, USA</div>
-            <div class="cv-date">August 2023 – Present</div>
-        </div>
-        <div class="cv-entry">
-            <div class="cv-main"><strong>Postdoc Research Associate</strong><br>Department of Evolution, Ecology, and Behavior<br>University of Illinois Urbana-Champaign<br>Urbana, IL, USA</div>
-            <div class="cv-date">January 2023 – July 2023</div>
-        </div>
-        <div class="cv-entry">
-            <div class="cv-main"><strong>Graduate Researcher</strong><br>Department of Evolution, Ecology, and Behavior<br>University of Illinois Urbana-Champaign<br>Urbana, IL, USA</div>
-            <div class="cv-date">August 2016 – December 2022</div>
-        </div>
-        <div class="cv-entry">
-            <div class="cv-main"><strong>Graduate Researcher</strong><br>Department of Biology<br>University of Puerto Rico, Rio Piedras<br>San Juan, PR, USA</div>
-            <div class="cv-date">August 2013 – July 2016</div>
-        </div>
-        <div class="cv-entry">
-            <div class="cv-main"><strong>Visiting Scholar</strong><br>Department of Biological Sciences<br>National University of Singapore<br>Singapore<br>Visit funded by a the UPRRP Bridge to the Doctorate Travel Grant</div>
-            <div class="cv-date">June – July 2015</div>
-        </div>
-        <div class="cv-entry">
-            <div class="cv-main"><strong>Visiting Scholar</strong><br>Muséum National d'Histoire Naturelle<br>Paris, France<br>Visit funded by a the UPRRP Bridge to the Doctorate Travel Grant</div>
-            <div class="cv-date">April – May 2014</div>
-        </div>
-        <div class="cv-entry">
-            <div class="cv-main"><strong>Biological Technician</strong><br>US Horticultural Research Laboratory<br>USDA Agricultural Research Service<br>Ft. Pierce, FL, USA</div>
-            <div class="cv-date">May – July 2013</div>
-        </div>
-        <div class="cv-entry">
-            <div class="cv-main"><strong>Biological Field Technician</strong><br>Arapaho National Forest<br>Sulphur Ranger District<br>US Forest Service<br>Granby, CO, USA</div>
-            <div class="cv-date">May – July 2012</div>
-        </div>
+        <div class="cv-entry"><span class="cv-date">August 2023 – Present</span><strong>Postdoctoral Researcher</strong><br>Institute of Ecology and Evolution<br>University of Oregon (UO)<br>Eugene, OR, USA</div>
+        <div class="cv-entry"><span class="cv-date">January 2023 – July 2023</span><strong>Postdoc Research Associate</strong><br>Department of Evolution, Ecology, and Behavior<br>University of Illinois Urbana-Champaign<br>Urbana, IL, USA</div>
+        <div class="cv-entry"><span class="cv-date">August 2016 – December 2022</span><strong>Graduate Researcher</strong><br>Department of Evolution, Ecology, and Behavior<br>University of Illinois Urbana-Champaign<br>Urbana, IL, USA</div>
+        <div class="cv-entry"><span class="cv-date">August 2013 – July 2016</span><strong>Graduate Researcher</strong><br>Department of Biology<br>University of Puerto Rico, Rio Piedras<br>San Juan, PR, USA</div>
+        <div class="cv-entry"><span class="cv-date">June – July 2015</span><strong>Visiting Scholar</strong><br>Department of Biological Sciences<br>National University of Singapore<br>Singapore<br>Visit funded by a the UPRRP Bridge to the Doctorate Travel Grant</div>
+        <div class="cv-entry"><span class="cv-date">April – May 2014</span><strong>Visiting Scholar</strong><br>Muséum National d'Histoire Naturelle<br>Paris, France<br>Visit funded by a the UPRRP Bridge to the Doctorate Travel Grant</div>
+        <div class="cv-entry"><span class="cv-date">May – July 2013</span><strong>Biological Technician</strong><br>US Horticultural Research Laboratory<br>USDA Agricultural Research Service<br>Ft. Pierce, FL, USA</div>
+        <div class="cv-entry"><span class="cv-date">May – July 2012</span><strong>Biological Field Technician</strong><br>Arapaho National Forest<br>Sulphur Ranger District<br>US Forest Service<br>Granby, CO, USA</div>
     </div>
 </div>
 
@@ -83,43 +52,40 @@ navbar_title: CV
     <div class="card-body p-4">
         <h4 class="mb-3">Funding</h4>
         <h5>Submitted and Under Review</h5>
-        <div class="cv-entry">
-            <div class="cv-main">Co-PI: Smithsonian Combined Call for Science and Research James Bond Fund, administered by the Office of the Under Secretary of Science and Research “<i>Genomic signatures of isolation in an endangered Caribbean avian endemic, the Elfin-woods Warbler</i>” – $53,000</div>
-            <div class="cv-date">Submitted: August 2026</div>
-        </div>
+        <div class="cv-entry"><span class="cv-date">Submitted: August 2026</span>Co-PI: Smithsonian Combined Call for Science and Research James Bond Fund, administered by the Office of the Under Secretary of Science and Research “<i>Genomic signatures of isolation in an endangered Caribbean avian endemic, the Elfin-woods Warbler</i>” – $53,000</div>
         <h5 class="mt-4">Awarded</h5>
-        <div class="cv-entry"><div class="cv-main">UIUC Odum-Kendeigh Summer Research Award – $1,000</div><div class="cv-date">April 2021</div></div>
-        <div class="cv-entry"><div class="cv-main">American Society of Naturalists Student Research Award Grant – $2,000</div><div class="cv-date">April 2020</div></div>
-        <div class="cv-entry"><div class="cv-main">UIUC Francis M. and Harlie M. Clark Research Support Grant – $1,000</div><div class="cv-date">April 2019</div></div>
-        <div class="cv-entry"><div class="cv-main">IGERT Graduate Research Grant – $5,000</div><div class="cv-date">August 2018</div></div>
-        <div class="cv-entry"><div class="cv-main">UIUC Harley J. Van Cleave Research Support Grant – $1,000</div><div class="cv-date">April 2018</div></div>
-        <div class="cv-entry"><div class="cv-main">UPRRP Bridge to the Doctorate Travel Grant – $2,000</div><div class="cv-date">May 2015</div></div>
-        <div class="cv-entry"><div class="cv-main">UPRRP Bridge to the Doctorate Research Grant – $4,000</div><div class="cv-date">August 2014</div></div>
-        <div class="cv-entry"><div class="cv-main">UPRRP Conference Travel Grant – $250</div><div class="cv-date">June 2014</div></div>
-        <div class="cv-entry"><div class="cv-main">UPRRP Bridge to the Doctorate Travel Grant – $1,000</div><div class="cv-date">April 2014</div></div>
-        <div class="cv-entry"><div class="cv-main">UPRRP Natural Resources Career Tracks Conference Travel Grant – $500</div><div class="cv-date">November 2013</div></div>
-        <div class="cv-entry"><div class="cv-main">UIA-Bayamón PR-LSAMP Undergraduate Research Grant – $200</div><div class="cv-date">May 2012</div></div>
+        <div class="cv-entry"><span class="cv-date">April 2021</span>UIUC Odum-Kendeigh Summer Research Award – $1,000</div>
+        <div class="cv-entry"><span class="cv-date">April 2020</span>American Society of Naturalists Student Research Award Grant – $2,000</div>
+        <div class="cv-entry"><span class="cv-date">April 2019</span>UIUC Francis M. and Harlie M. Clark Research Support Grant – $1,000</div>
+        <div class="cv-entry"><span class="cv-date">August 2018</span>IGERT Graduate Research Grant – $5,000</div>
+        <div class="cv-entry"><span class="cv-date">April 2018</span>UIUC Harley J. Van Cleave Research Support Grant – $1,000</div>
+        <div class="cv-entry"><span class="cv-date">May 2015</span>UPRRP Bridge to the Doctorate Travel Grant – $2,000</div>
+        <div class="cv-entry"><span class="cv-date">August 2014</span>UPRRP Bridge to the Doctorate Research Grant – $4,000</div>
+        <div class="cv-entry"><span class="cv-date">June 2014</span>UPRRP Conference Travel Grant – $250</div>
+        <div class="cv-entry"><span class="cv-date">April 2014</span>UPRRP Bridge to the Doctorate Travel Grant – $1,000</div>
+        <div class="cv-entry"><span class="cv-date">November 2013</span>UPRRP Natural Resources Career Tracks Conference Travel Grant – $500</div>
+        <div class="cv-entry"><span class="cv-date">May 2012</span>UIA-Bayamón PR-LSAMP Undergraduate Research Grant – $200</div>
     </div>
 </div>
 
 <div class="card border-0 shadow-sm bg-white mb-3">
     <div class="card-body p-4">
         <h4 class="mb-3">Honors and Awards</h4>
-        <div class="cv-entry"><div class="cv-main">PacBio &amp; University of Oregon GC3F SMRT Grant (Runner Up)</div><div class="cv-date">November 2024</div></div>
-        <div class="cv-entry"><div class="cv-main">2022 Harry Smith Prize in Molecular Ecology (Runner Up)</div><div class="cv-date">May 2022</div></div>
-        <div class="cv-entry"><div class="cv-main">UIUC Graduate College Conference Travel Award</div><div class="cv-date">January 2022</div></div>
-        <div class="cv-entry"><div class="cv-main">SSE W.D. Hamilton Award Finalist</div><div class="cv-date">June 2021</div></div>
-        <div class="cv-entry"><div class="cv-main">UIUC Francis M. and Harlie M. Clark Research Fellowship</div><div class="cv-date">April 2021</div></div>
-        <div class="cv-entry"><div class="cv-main">UIUC Odum-Kendeigh Research Award</div><div class="cv-date">April 2021</div></div>
-        <div class="cv-entry"><div class="cv-main">UIUC Thomas Frazzetta Award for Outstanding Teaching in Evolution, Ecology, and Behavioral Biology</div><div class="cv-date">May 2020</div></div>
-        <div class="cv-entry"><div class="cv-main">American Society of Naturalists Student Research Award</div><div class="cv-date">April 2020</div></div>
-        <div class="cv-entry"><div class="cv-main">NSF-IGERT Vertically Integrated Training in Genomics Fellowship</div><div class="cv-date">August 2016</div></div>
-        <div class="cv-entry"><div class="cv-main">UIUC Graduate College Fellowship</div><div class="cv-date">August 2016</div></div>
-        <div class="cv-entry"><div class="cv-main">UPRRP PR-LSAMP Bridge to the Doctorate Fellowship</div><div class="cv-date">August 2013</div></div>
-        <div class="cv-entry"><div class="cv-main">Inter American University of Puerto Rico Poly-Inter Ex-Alumni Society Medal</div><div class="cv-date">June 2013</div></div>
-        <div class="cv-entry"><div class="cv-main">UIA-Bayamón Department of Natural Sciences and Mathematics Academic Excellence Award</div><div class="cv-date">June 2013</div></div>
-        <div class="cv-entry"><div class="cv-main">UIA-Bayamón Award for Merits and Service</div><div class="cv-date">June 2013</div></div>
-        <div class="cv-entry"><div class="cv-main">UIA-Bayamón PR-LSAMP Undergraduate Research Fellowship</div><div class="cv-date">May 2012</div></div>
+        <div class="cv-entry"><span class="cv-date">November 2024</span>PacBio &amp; University of Oregon GC3F SMRT Grant (Runner Up)</div>
+        <div class="cv-entry"><span class="cv-date">May 2022</span>2022 Harry Smith Prize in Molecular Ecology (Runner Up)</div>
+        <div class="cv-entry"><span class="cv-date">January 2022</span>UIUC Graduate College Conference Travel Award</div>
+        <div class="cv-entry"><span class="cv-date">June 2021</span>SSE W.D. Hamilton Award Finalist</div>
+        <div class="cv-entry"><span class="cv-date">April 2021</span>UIUC Francis M. and Harlie M. Clark Research Fellowship</div>
+        <div class="cv-entry"><span class="cv-date">April 2021</span>UIUC Odum-Kendeigh Research Award</div>
+        <div class="cv-entry"><span class="cv-date">May 2020</span>UIUC Thomas Frazzetta Award for Outstanding Teaching in Evolution, Ecology, and Behavioral Biology</div>
+        <div class="cv-entry"><span class="cv-date">April 2020</span>American Society of Naturalists Student Research Award</div>
+        <div class="cv-entry"><span class="cv-date">August 2016</span>NSF-IGERT Vertically Integrated Training in Genomics Fellowship</div>
+        <div class="cv-entry"><span class="cv-date">August 2016</span>UIUC Graduate College Fellowship</div>
+        <div class="cv-entry"><span class="cv-date">August 2013</span>UPRRP PR-LSAMP Bridge to the Doctorate Fellowship</div>
+        <div class="cv-entry"><span class="cv-date">June 2013</span>Inter American University of Puerto Rico Poly-Inter Ex-Alumni Society Medal</div>
+        <div class="cv-entry"><span class="cv-date">June 2013</span>UIA-Bayamón Department of Natural Sciences and Mathematics Academic Excellence Award</div>
+        <div class="cv-entry"><span class="cv-date">June 2013</span>UIA-Bayamón Award for Merits and Service</div>
+        <div class="cv-entry"><span class="cv-date">May 2012</span>UIA-Bayamón PR-LSAMP Undergraduate Research Fellowship</div>
     </div>
 </div>
 
@@ -127,20 +93,20 @@ navbar_title: CV
     <div class="card-body p-4">
         <h4 class="mb-3">Teaching Experience</h4>
         <h5>Workshop Instructor</h5>
-        <div class="cv-entry"><div class="cv-main"><i>RADseq Filtering and Genotyping with Stacks</i>, ConGen, University of Montana</div><div class="cv-date">Fall 2021-2024</div></div>
-        <div class="cv-entry"><div class="cv-main"><i>The Practice of RADseq: Population Genomics Analysis with Stacks</i>, PRInformatics Workshop, Glasgow, UK</div><div class="cv-date">September 2019</div></div>
-        <div class="cv-entry"><div class="cv-main"><i>2018 Workshop on Genomics</i>, Cesky Krumlov, Czech Republic</div><div class="cv-date">January 2018</div></div>
+        <div class="cv-entry"><span class="cv-date">Fall 2021-2024</span><i>RADseq Filtering and Genotyping with Stacks</i>, ConGen, University of Montana</div>
+        <div class="cv-entry"><span class="cv-date">September 2019</span><i>The Practice of RADseq: Population Genomics Analysis with Stacks</i>, PRInformatics Workshop, Glasgow, UK</div>
+        <div class="cv-entry"><span class="cv-date">January 2018</span><i>2018 Workshop on Genomics</i>, Cesky Krumlov, Czech Republic</div>
 
         <h5 class="mt-4">Teaching Assistant</h5>
-        <div class="cv-entry"><div class="cv-main">IB302 <i>Evolution</i>, School of Integrative Biology, UIUC</div><div class="cv-date">Spring 2022, 2020, 2019</div></div>
-        <div class="cv-entry"><div class="cv-main">IB204 <i>Genetics</i>, School of Integrative Biology, UIUC</div><div class="cv-date">Fall 2021</div></div>
-        <div class="cv-entry"><div class="cv-main">IB501 <i>Programming for Genomics</i>, School of Integrative Biology, UIUC</div><div class="cv-date">Fall 2020</div></div>
-        <div class="cv-entry"><div class="cv-main">IB360 <i>Evolution &amp; Human Health</i>, School of Integrative Biology, UIUC</div><div class="cv-date">Fall 2019</div></div>
-        <div class="cv-entry"><div class="cv-main">BIOL3349 <i>Genetics</i>, Department of Biology, UPRRP</div><div class="cv-date">Fall 2014</div></div>
+        <div class="cv-entry"><span class="cv-date">Spring 2022, 2020, 2019</span>IB302 <i>Evolution</i>, School of Integrative Biology, UIUC</div>
+        <div class="cv-entry"><span class="cv-date">Fall 2021</span>IB204 <i>Genetics</i>, School of Integrative Biology, UIUC</div>
+        <div class="cv-entry"><span class="cv-date">Fall 2020</span>IB501 <i>Programming for Genomics</i>, School of Integrative Biology, UIUC</div>
+        <div class="cv-entry"><span class="cv-date">Fall 2019</span>IB360 <i>Evolution &amp; Human Health</i>, School of Integrative Biology, UIUC</div>
+        <div class="cv-entry"><span class="cv-date">Fall 2014</span>BIOL3349 <i>Genetics</i>, Department of Biology, UPRRP</div>
 
         <h5 class="mt-4">Invited Lecturer</h5>
-        <div class="cv-entry"><div class="cv-main"><i>Genome Evolution in Bony Fishes</i>. BI457/557 <i>Marine Biology: Biology of Fishes</i>, Oregon Institute of Marine Biology, UO.</div><div class="cv-date">July 2024</div></div>
-        <div class="cv-entry"><div class="cv-main"><i>Genome Evolution</i>. IB302 <i>Evolution</i>, School of Integrative Biology, UIUC</div><div class="cv-date">April 2023, 2022</div></div>
+        <div class="cv-entry"><span class="cv-date">July 2024</span><i>Genome Evolution in Bony Fishes</i>. BI457/557 <i>Marine Biology: Biology of Fishes</i>, Oregon Institute of Marine Biology, UO.</div>
+        <div class="cv-entry"><span class="cv-date">April 2023, 2022</span><i>Genome Evolution</i>. IB302 <i>Evolution</i>, School of Integrative Biology, UIUC</div>
     </div>
 </div>
 
@@ -148,15 +114,15 @@ navbar_title: CV
     <div class="card-body p-4">
         <h4 class="mb-3">Mentorship Experience</h4>
         <h5>Undergraduate Research Mentoring</h5>
-        <div class="cv-entry"><div class="cv-main"><i>Alexandra Bangs</i>, Department of Biology, Summer Program for Undergraduate Research, UO</div><div class="cv-date">Summer 2024</div></div>
-        <div class="cv-entry"><div class="cv-main"><i>Eliana Eng</i>, School of Integrative Biology, UIUC</div><div class="cv-date">Spring 2022</div></div>
-        <div class="cv-entry"><div class="cv-main"><i>Shehani Gunawardena</i>, School of Integrative Biology, Undergraduate Research Apprenticeship Program, UIUC</div><div class="cv-date">Fall 2018 – Spring 2021</div></div>
-        <div class="cv-entry"><div class="cv-main"><i>Neelima Valluru</i>, School of Integrative Biology, Undergraduate Research Apprenticeship Program, UIUC</div><div class="cv-date">Fall 2018 – Spring 2019</div></div>
-        <div class="cv-entry"><div class="cv-main"><i>Manuel Menéndez</i>, Department of Biology, Puerto Rico Alliance for Minority Participation, UPRRP</div><div class="cv-date">Spring 2014 – Spring 2016</div></div>
+        <div class="cv-entry"><span class="cv-date">Summer 2024</span><i>Alexandra Bangs</i>, Department of Biology, Summer Program for Undergraduate Research, UO</div>
+        <div class="cv-entry"><span class="cv-date">Spring 2022</span><i>Eliana Eng</i>, School of Integrative Biology, UIUC</div>
+        <div class="cv-entry"><span class="cv-date">Fall 2018 – Spring 2021</span><i>Shehani Gunawardena</i>, School of Integrative Biology, Undergraduate Research Apprenticeship Program, UIUC</div>
+        <div class="cv-entry"><span class="cv-date">Fall 2018 – Spring 2019</span><i>Neelima Valluru</i>, School of Integrative Biology, Undergraduate Research Apprenticeship Program, UIUC</div>
+        <div class="cv-entry"><span class="cv-date">Spring 2014 – Spring 2016</span><i>Manuel Menéndez</i>, Department of Biology, Puerto Rico Alliance for Minority Participation, UPRRP</div>
 
         <h5 class="mt-4">Mentorship Certifications</h5>
-        <div class="cv-entry"><div class="cv-main"><i>Maintaining, Engaging, and Tracking Alumni in Science and Health Research (METAS+) Program Mentor</i>, Institute of Interdisciplinary Research, University of Puerto Rico, Cayey.</div><div class="cv-date">March 2021 – May 2022</div></div>
-        <div class="cv-entry"><div class="cv-main"><i>Illinois Mentoring Excellence Program Certification</i>, UIUC Graduate College Undergraduate Research Apprenticeship Program, UIUC</div><div class="cv-date">June 2019</div></div>
+        <div class="cv-entry"><span class="cv-date">March 2021 – May 2022</span><i>Maintaining, Engaging, and Tracking Alumni in Science and Health Research (METAS+) Program Mentor</i>, Institute of Interdisciplinary Research, University of Puerto Rico, Cayey.</div>
+        <div class="cv-entry"><span class="cv-date">June 2019</span><i>Illinois Mentoring Excellence Program Certification</i>, UIUC Graduate College Undergraduate Research Apprenticeship Program, UIUC</div>
     </div>
 </div>
 
@@ -191,8 +157,8 @@ navbar_title: CV
     <div class="card-body p-4">
         <h4 class="mb-3">Academic and Professional Service</h4>
         <h5>Editorial Service</h5>
-        <div class="cv-entry"><div class="cv-main">Social Media Editor for <i>Molecular Ecology</i> and <i>Molecular Ecology Resources</i></div><div class="cv-date">January 2026 – Present</div></div>
-        <div class="cv-entry"><div class="cv-main">Junior Editorial Board Member for <i>Molecular Ecology</i> and <i>Molecular Ecology Resources</i></div><div class="cv-date">August 2022 – December 2025</div></div>
+        <div class="cv-entry"><span class="cv-date">January 2026 – Present</span>Social Media Editor for <i>Molecular Ecology</i> and <i>Molecular Ecology Resources</i></div>
+        <div class="cv-entry"><span class="cv-date">August 2022 – December 2025</span>Junior Editorial Board Member for <i>Molecular Ecology</i> and <i>Molecular Ecology Resources</i></div>
 
         <h5 class="mt-4">Peer Reviewing Experience</h5>
         <p class="mb-1">Served as reviewer for the peer reviewed academic journals:</p>
@@ -211,18 +177,18 @@ navbar_title: CV
         </ul>
 
         <h5 class="mt-4">Ad Hoc Reviewer</h5>
-        <div class="cv-entry"><div class="cv-main">Committee Chair, 2026 Harry Smith Prize</div><div class="cv-date">April 2026 – June 2026</div></div>
-        <div class="cv-entry"><div class="cv-main">Society for the Study of Evolution, Hamilton Award Prize</div><div class="cv-date">May 2025</div></div>
-        <div class="cv-entry"><div class="cv-main">Society for the Study of Evolution, 2023 Rosemary Grant Advanced Award</div><div class="cv-date">November 2023</div></div>
+        <div class="cv-entry"><span class="cv-date">April 2026 – June 2026</span>Committee Chair, 2026 Harry Smith Prize</div>
+        <div class="cv-entry"><span class="cv-date">May 2025</span>Society for the Study of Evolution, Hamilton Award Prize</div>
+        <div class="cv-entry"><span class="cv-date">November 2023</span>Society for the Study of Evolution, 2023 Rosemary Grant Advanced Award</div>
 
         <h5 class="mt-4">Professional Organizations</h5>
-        <div class="cv-entry"><div class="cv-main"><i>Society for Molecular Biology and Evolution</i></div><div class="cv-date">May 2021 – Present</div></div>
-        <div class="cv-entry"><div class="cv-main"><i>American Society of Naturalists</i></div><div class="cv-date">April 2020 – Present</div></div>
-        <div class="cv-entry"><div class="cv-main"><i>Society for the Study of Evolution</i></div><div class="cv-date">January 2019 – Present</div></div>
-        <div class="cv-entry"><div class="cv-main"><i>American Association for the Advancement of Science</i></div><div class="cv-date">August 2018 – Present</div></div>
-        <div class="cv-entry"><div class="cv-main"><i>Graduates in Ecology and Evolutionary Biology</i> at the University of Illinois Urbana-Champaign.</div><div class="cv-date">September 2016 – December 2022</div></div>
-        <div class="cv-entry"><div class="cv-main"><i>PR-LSAMP Bridge to the Doctorate Program</i>, University of Puerto Rico, Río Piedras</div><div class="cv-date">August 2013 – August 2015</div></div>
-        <div class="cv-entry"><div class="cv-main"><i>USDA Natural Resource Career Tracks Program</i>, University of Puerto Rico, Río Piedras, and Inter American University of Puerto Rico, Bayamón</div><div class="cv-date">January 2012 – December 2015</div></div>
+        <div class="cv-entry"><span class="cv-date">May 2021 – Present</span><i>Society for Molecular Biology and Evolution</i></div>
+        <div class="cv-entry"><span class="cv-date">April 2020 – Present</span><i>American Society of Naturalists</i></div>
+        <div class="cv-entry"><span class="cv-date">January 2019 – Present</span><i>Society for the Study of Evolution</i></div>
+        <div class="cv-entry"><span class="cv-date">August 2018 – Present</span><i>American Association for the Advancement of Science</i></div>
+        <div class="cv-entry"><span class="cv-date">September 2016 – December 2022</span><i>Graduates in Ecology and Evolutionary Biology</i> at the University of Illinois Urbana-Champaign.</div>
+        <div class="cv-entry"><span class="cv-date">August 2013 – August 2015</span><i>PR-LSAMP Bridge to the Doctorate Program</i>, University of Puerto Rico, Río Piedras</div>
+        <div class="cv-entry"><span class="cv-date">January 2012 – December 2015</span><i>USDA Natural Resource Career Tracks Program</i>, University of Puerto Rico, Río Piedras, and Inter American University of Puerto Rico, Bayamón</div>
     </div>
 </div>
 

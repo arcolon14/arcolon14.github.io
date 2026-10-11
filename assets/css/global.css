@@ -88,36 +88,27 @@ div.lazy {
 
 /* CV page */
 .cv-entry {
-    display: flex;
     margin-bottom: 0.6rem;
 }
 
-.cv-entry > .cv-main {
-    flex: 1;
-    padding-right: 1rem;
+/* Comes first in each entry so it floats to the right of the entry's first line */
+.cv-date {
+    float: right;
+    margin-left: 1rem;
+    white-space: nowrap;
+    color: #6c757d;
 }
 
-.cv-entry > .cv-date {
-    white-space: nowrap;
-    text-align: right;
-    font-style: italic;
-    color: #6c757d;
+.cv-entry::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .cv-ref {
     padding-left: 2.5em;
     text-indent: -2.5em;
     margin-bottom: 0.5rem;
-}
-
-@media (max-width: 575.98px) {
-    .cv-entry {
-        flex-direction: column;
-    }
-
-    .cv-entry > .cv-date {
-        text-align: left;
-    }
 }
 
 .email-text {
