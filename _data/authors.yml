@@ -1,22 +1,8 @@
-"Your Name":
+# Optional per-author settings for publication author lists. Keys must match
+# names exactly as they appear in _publications files.
+#   bold: true      highlight the name
+#   url: <link>     link the name to a homepage
+#   name: <text>    display a different name than the key
+
+"Angel G. Rivera-Colón":
   bold: true
-
-"Robert White":
-  url: https://www.google.com/?q=Robert+White
-
-"Charles Green (MIT)":
-  name: Charles Green
-  url: https://www.google.com/?q=Charles+Green+MIT
-
-"Charles Green (Stanford)":
-  name: Charles Green
-  url: https://www.google.com/?q=Charles+Green+Stanford
-
-"Garrett Harris":
-  url: https://www.google.com/?q=Garrett+Harris
-
-"James Wang":
-  url: https://www.google.com/?q=James+Wang
-
-"John Doe":
-  url: https://www.google.com/?q=John+Doe
