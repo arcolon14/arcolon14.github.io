@@ -3,7 +3,8 @@ secondary_name: ""
 navbar_name: "Angel G. Rivera-Colón"
 
 positions:
-- name: Postdoctoral Researcher, Kern-Ralph co-lab, Institute of Ecology and Evolution, University of Oregon
+- logo: /assets/images/badges/uo.jpg
+  name: Postdoctoral Researcher, Kern-Ralph co-lab, Institute of Ecology and Evolution, University of Oregon
 
 
 email: "ariverac@uoregon.edu"
@@ -29,27 +30,42 @@ portrait_url: /assets/images/photos/profile.jpg
 #   Optional caption shown when hovering over the photo.
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
-  position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
-  date: Sep. 2024 - present
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
+- name: University of Illinois Urbana-Champaign
+  logo: /assets/images/badges/uiuc.png
+  dept: Department of Evolution, Ecology, and Behavior
+  position: Ph.D. in Biology
+  date: 2016 - 2022
+- name: University of Puerto Rico, Río Piedras
+  logo: /assets/images/badges/uprrp.png
+  dept: Department of Biology
+  position: M.S. in Biology
+  date: 2013 - 2016
+- name: Inter American University of Puerto Rico, Bayamón
+  logo: /assets/images/badges/inter.png
+  dept: Department of Natural Sciences and Mathematics
+  position: B.S. in Biotechnology
+  date: 2009 - 2013
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+# Shown on the homepage under "Academic Positions"
+experience:
+- name: University of Oregon
+  logo: /assets/images/badges/uo.jpg
+  dept: Kern-Ralph co-lab, Institute of Ecology and Evolution
+  position: Postdoctoral Researcher
+  date: 2023 - present
+- name: University of Illinois Urbana-Champaign
+  logo: /assets/images/badges/uiuc.png
+  dept: Catchen lab, Department of Evolution, Ecology, and Behavior
+  position: Postdoctoral Researcher
+  date: "2023"
 
-awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+# Shown on the homepage under "Other Positions"; entries without a logo get a book icon
+other_positions:
+- name: Molecular Ecology and Molecular Ecology Resources
+  position: Social Media Editor
+  date: 2025 - present
+
+# Uncomment to show an "Awards" section on the homepage
+# awards:
+# - name: Award name
+#   date: 2024

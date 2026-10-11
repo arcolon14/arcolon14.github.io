@@ -29,11 +29,42 @@
                     {% if site.data.profile.experience %}
                     <div class="col-md-6">
                         <div class="mx-2 my-1">
-                            <h6>Experience</h6>
+                            <h6>Academic Positions</h6>
                             <ul class="list-unstyled mb-1">
                                 {% for item in site.data.profile.experience %}
                                 <li class="media mb-1">
+                                    {% if item.logo %}
                                     <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
+                                    {% else %}
+                                    <i class="fas fa-book-open text-muted text-center mr-1 mt-1" style="width: 18px;"></i>
+                                    {% endif %}
+                                    <div class="media-body">
+                                        <div>{{ item.name }}</div>
+                                        <div class="small">{{ item.dept }}</div>
+                                        <div class="small d-flex">
+                                            <div>{{ item.position }}</div>
+                                            <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if site.data.profile.other_positions %}
+                    <div class="col-md-6">
+                        <div class="mx-2 my-1">
+                            <h6>Other Positions</h6>
+                            <ul class="list-unstyled mb-1">
+                                {% for item in site.data.profile.other_positions %}
+                                <li class="media mb-1">
+                                    {% if item.logo %}
+                                    <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
+                                    {% else %}
+                                    <i class="fas fa-book-open text-muted text-center mr-1 mt-1" style="width: 18px;"></i>
+                                    {% endif %}
                                     <div class="media-body">
                                         <div>{{ item.name }}</div>
                                         <div class="small">{{ item.dept }}</div>
